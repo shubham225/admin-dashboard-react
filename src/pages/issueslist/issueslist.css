@@ -1,0 +1,30 @@
+.issueList{
+    display: flex;
+    height: 100%;
+}
+
+.status{
+    padding: 5px 7px;
+    border: none;
+    border-radius: 10px;
+}
+
+.status.Open{
+    background-color: #fff0f1;
+    color: #d95087;
+}
+
+.status.In-Progress{
+    background-color: #ebf1fe;
+    color: #0a4a99;
+}
+
+.status.Closed{
+    background-color: #e5faf2;
+    color: #3bb077;
+}
+
+.status.Assigned{
+    background-color: #f4e6fc;
+    color: #af1ad4;
+}

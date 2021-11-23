@@ -21,11 +21,19 @@ export default function Sidebar() {
                             <Home className="sidebarIcon"/>
                             Home
                         </li>
-                        </Link> 
+                        </Link>
+                        <Link to="/tickets/"> 
                         <li className="sidebarListItem">
                             <List className="sidebarIcon"/>
-                            Issue List
+                            Tickets List
                         </li>
+                        </Link>
+                        <Link to="/users/"> 
+                            <li className="sidebarListItem">
+                                <AssignmentInd className="sidebarIcon"/>
+                                Users
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <History className="sidebarIcon"/>
                             History
@@ -35,12 +43,6 @@ export default function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">User Management</h3>
                     <ul className="sidebarList">
-                        <Link to="/users/"> 
-                            <li className="sidebarListItem">
-                                <AssignmentInd className="sidebarIcon"/>
-                                Active Users
-                            </li>
-                        </Link>
                         <li className="sidebarListItem">
                             <ListAlt className="sidebarIcon"/>
                             All Users

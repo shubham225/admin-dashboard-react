@@ -1,5 +1,6 @@
 import './topbar.css'
 import { NotificationsNone, Settings} from '@mui/icons-material';
+import { Badge } from '@mui/material';
 
 export default function Topbar() {
     return (
@@ -10,8 +11,9 @@ export default function Topbar() {
                 </div>
                 <div className="topright">
                     <div className="topIconContainer">
+                    <Badge badgeContent={4} color="primary">
                         <NotificationsNone/>
-                        <span className="topIconBadge">2</span>
+                    </Badge>
                     </div>
                     <div className="topIconContainer">
                         <Settings/>

@@ -1,8 +1,9 @@
 .sidebar{
     flex: 1;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 90px);
     position: sticky;
     background-color: rgb(251, 251, 255);
+    padding: 10px 0px;
 }
 
 .sidebarWrapper{
@@ -22,6 +23,7 @@
 .sidebarList{
     list-style: none;
     padding: 3px;
+    margin: 3px;
 }
 
 .sidebarListItem{
