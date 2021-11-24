@@ -11,6 +11,10 @@
 # production
 /build
 
+# firebase configurations
+/src/firebase-auth
+
+
 # misc
 .DS_Store
 .env.local
