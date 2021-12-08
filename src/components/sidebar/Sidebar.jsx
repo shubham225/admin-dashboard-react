@@ -6,7 +6,7 @@ import {
     ListAlt, 
     SupervisorAccount, 
     AssignmentInd } from '@mui/icons-material';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export default function Sidebar() {
@@ -16,24 +16,18 @@ export default function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        <Link to="/"> 
-                        <li className="sidebarListItem active">
+                        <NavLink to="/" className="sidebarListItem">
                             <Home className="sidebarIcon"/>
                             Home
-                        </li>
-                        </Link>
-                        <Link to="/tickets/"> 
-                        <li className="sidebarListItem">
+                        </NavLink>
+                        <NavLink to="/tickets/" className="sidebarListItem">
                             <List className="sidebarIcon"/>
                             Tickets List
-                        </li>
-                        </Link>
-                        <Link to="/users/"> 
-                            <li className="sidebarListItem">
+                        </NavLink>
+                        <NavLink to="/users/" className="sidebarListItem">
                                 <AssignmentInd className="sidebarIcon"/>
                                 Users
-                            </li>
-                        </Link>
+                        </NavLink>
                         <li className="sidebarListItem">
                             <History className="sidebarIcon"/>
                             History

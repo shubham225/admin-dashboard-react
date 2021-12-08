@@ -1,12 +1,16 @@
-import * as React from 'react';
+import { useState } from "react";
 import './topbar.css'
 import { NotificationsNone, Settings} from '@mui/icons-material';
-import { Badge, Button, Avatar, Menu, MenuItem } from '@mui/material';
+import { Badge, 
+         Avatar, 
+         Menu, 
+         MenuItem } from '@mui/material';
 import { deepOrange } from '@mui/material/colors';
+
 
 export default function Topbar({loggedin, handleSignout}) {
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorEl, setAnchorEl] = useState('');
     const open = Boolean(anchorEl);
     
     const handleClick = (event) => {
@@ -26,9 +30,9 @@ export default function Topbar({loggedin, handleSignout}) {
                 { loggedin ? (
                     <div className="topright">
                         <div className="topIconContainer">
-                        <Badge badgeContent={4} color="primary">
-                            <NotificationsNone/>
-                        </Badge>
+                            <Badge badgeContent={4} color="primary">
+                                <NotificationsNone />
+                            </Badge>
                         </div>
                         <div className="topIconContainer">
                             <Settings/>
