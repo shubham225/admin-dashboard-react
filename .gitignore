@@ -12,10 +12,11 @@
 /build
 
 # firebase configurations
-/src/firebase-auth
+# /src/firebase-auth
 
 
 # misc
+.env
 .DS_Store
 .env.local
 .env.development.local
